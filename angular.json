@@ -20,16 +20,21 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+            "assets": [  {
+    "glob": "**/*",
+    "input": "src/assets",
+    "output": "assets"
+  },
+  "src/favicon.ico"],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/fonts/material-icon/css/material-design-iconic-font.min.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+                "src/assets/vendor/jquery/jquery.min.js",
+                "src/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
