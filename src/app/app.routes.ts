@@ -1,8 +1,8 @@
 import { RedirectCommand, Routes } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { Component } from '@angular/core';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { LoginComponent } from './pages/login/login.component'
 
 export const routes: Routes = [
     {
@@ -12,7 +12,7 @@ export const routes: Routes = [
     },
     {
         path:'login',
-        component: LoginComponent 
+        component: LoginComponent
     },
     {
         path:'',
